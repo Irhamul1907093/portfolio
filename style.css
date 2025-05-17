@@ -46,7 +46,7 @@ nav a {
   text-decoration: none;
   font-weight: bold;
   transition: color 0.3s ease;
-  font-size: 1.2rem;
+  font-size: 1.0rem;
 }
 
 nav a:hover {
@@ -678,4 +678,48 @@ footer {
 }
 
 
+/* Dark Theme Styles */
+body.dark-mode {
+  background-color: #1e1e1e;
+  color: #f0f0f0;
+}
+
+body.dark-mode header,
+body.dark-mode footer {
+  background-color: #111;
+  color: #ccc;
+}
+
+body.dark-mode .project,
+body.dark-mode .contact-form {
+  background-color: #2a2a2a;
+  color: #e0e0e0;
+}
+
+body.dark-mode .project a {
+  background-color: #16a085;
+}
+
+body.dark-mode .project a:hover {
+  background-color: #1abc9c;
+}
+
+/* Toggle Button */
+.theme-toggle {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  font-size: 1.2rem;
+  padding: 0.4rem 0.7rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  background-color: #3498db;
+  color: #fff;
+  transition: background-color 0.3s ease;
+}
+
+.theme-toggle:hover {
+  background-color: #2980b9;
+}
 
