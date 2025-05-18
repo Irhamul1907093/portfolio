@@ -1,0 +1,43 @@
+#about {
+  background-color: #b36d6d; /* Light background for contrast */
+  padding: 40px 20px;
+  border-radius: 12px;
+  max-width: 940px;
+  margin: 40px auto;
+ 
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.7;
+  filter: grayscale(100%);
+}
+*/
+/* Section heading */
+#about h2 {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 30px;
+  color: #dc3000;
+  position: relative;
+}
+
+#about h2::after {
+  content: "";
+  width: 60px;
+  height: 3px;
+  background-color: #007bff;
+  display: block;
+  margin: 10px auto 0;
+  border-radius: 5px;
+}
+
+/* Paragraph text */
+#about p {
+  font-size: 1.05rem;
+  color: #444;
+  text-align: justify;
+  padding: 0 10px;
+}
+
+/* Emphasized text */
+#about strong {
+  color: #0c71dc;
+}
