@@ -59,25 +59,27 @@ header h1 span {
 nav {
   display: flex;
   justify-content: center;
-  background-color: #444;
   gap: 1.5rem;
   flex-wrap: wrap;
   margin-top: 0.5rem;
   padding: 1rem 0;
-  font-size: 2.5rem;
-  
+  background-color: #2c3e50;
 }
 
 nav a {
-  color: #0c88a7;
+  color: #ecf0f1;
   text-decoration: none;
   font-weight: bold;
-  transition: color 0.3s ease;
-  font-size: 1.0rem;
+  transition: color 0.3s ease, transform 0.3s ease;
+  padding: 0.3rem 0.6rem;
+  border-radius: 2px;
+  font-size: 0.9rem;
 }
 
 nav a:hover {
-  color: #c3d5e1;
+  color: #3498db;
+  transform: scale(1.1);
+  background-color: rgba(255, 255, 255, 0.05);
 }
 
 section {
@@ -395,6 +397,81 @@ footer {
   transform: scale(1.05);
 }
 
+/* Problem Solving Section */
+#problem-solving {
+  background: linear-gradient(135deg, #eaf6ff, #ffffff);
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
+  padding: 3rem 2rem;
+}
+
+.ps-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: space-between;
+}
+
+.platform {
+  flex: 1 1 45%;
+  background-color: #ffffff;
+  border-left: 5px solid #3498db;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.platform:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.08);
+}
+
+.platform h3 {
+  color: #2980b9;
+  margin-bottom: 0.5rem;
+  font-size: 1.4rem;
+}
+
+.platform p {
+  font-size: 1rem;
+  color: #2c3e50;
+}
+
+.badge {
+  display: inline-block;
+  padding: 0.3rem 0.6rem;
+  margin: 0.2rem;
+  border-radius: 8px;
+  font-weight: bold;
+  font-size: 0.85rem;
+  color: white;
+}
+
+.five-star {
+  background-color: #27ae60; /* Green */
+}
+
+.four-star {
+  background-color: #e67e22; /* Orange */
+}
+
+.three-star {
+  background-color: #f39c12; /* Amber */
+}
+
+@media (max-width: 768px) {
+  .ps-container {
+    flex-direction: column;
+  }
+
+  .platform {
+    flex: 1 1 100%;
+  }
+}
+
+
+
 
 .certification-card {
   background-color: #fff;
@@ -649,7 +726,7 @@ footer {
   display: flex;
   flex-direction: column;
   gap: 1rem;
-  background-color: #ffffff;
+  background-color: #5e3c3c;
   padding: 2rem;
   border-radius: 12px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
@@ -660,14 +737,14 @@ footer {
 .contact-form input,
 .contact-form textarea {
   padding: 0.75rem 1rem;
-  border: 1px solid #ccc;
+  border: 4px solid #1d3db191;
   border-radius: 8px;
   font-size: 1rem;
   width: 100%;
 }
 
 .contact-form button {
-  background-color: #3498db;
+  background-color: #e26729;
   color: white;
   padding: 0.75rem;
   border: none;
