@@ -30,21 +30,48 @@
   </div>
 
   <!-- Right: Socials -->
-  <div class="socials">
-  <p><a href="mailto:youremail@gmail.com"><i class="fas fa-envelope"></i> Gmail</a></p>
-  <p><a href="mailto:youremail@outlook.com"><i class="fas fa-envelope"></i> Outlook</a></p>
-  <p><a href="https://linkedin.com/in/yourusername" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a></p>
-  <p><a href="https://github.com/yourusername" target="_blank"><i class="fab fa-github"></i> GitHub</a></p>
-  
-  <!--<p><a href="https://discord.com/users/yourdiscordid" target="_blank"><i class="fab fa-discord"></i> Discord</a></p>
-  
-  <p><a href="https://twitter.com/yourusername" target="_blank"><i class="fab fa-twitter"></i> Twitter</a></p>
-   <p><a href="https://www.researchgate.net/profile/yourname" target="_blank"><i class="fab fa-researchgate"></i> ResearchGate</a></p>
-  <p><a href="https://facebook.com/yourusername" target="_blank"><i class="fab fa-facebook"></i> Facebook</a></p>
-  <p><a href="https://instagram.com/yourusername" target="_blank"><i class="fab fa-instagram"></i> Instagram</a></p>-->
-  <p><i class="fas fa-phone-alt"></i> +8801XXXXXXXXX</p>
-  <p><i class="fas fa-phone-alt"></i> +8801YYYYYYYY</p>
+  <!-- Right: Socials -->
+<!-- Right: Socials -->
+<div class="socials">
+  <h3>📡 Connect with Me</h3>
+  <div class="social-icons">
+
+    <a href="mailto:youremail@gmail.com" title="Send Email (Gmail)" class="gmail" target="_blank">
+      <i class="fas fa-envelope"></i>
+    </a>
+
+    <a href="mailto:youremail@outlook.com" title="Send Email (Outlook)" class="outlook" target="_blank">
+      <i class="fas fa-envelope"></i>
+    </a>
+
+    <a href="https://linkedin.com/in/yourusername" title="LinkedIn" class="linkedin" target="_blank">
+      <i class="fab fa-linkedin"></i>
+    </a>
+
+    <a href="https://github.com/yourusername" title="GitHub" class="github" target="_blank">
+      <i class="fab fa-github"></i>
+    </a>
+
+    <!-- Phone Icon -->
+<a href="#" class="phone" onclick="showPhoneModal(event)" title="Click to see number">
+  <i class="fas fa-phone-alt"></i>
+</a>
+
+<!-- Phone Modal -->
+<div id="phone-modal" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closePhoneModal()">&times;</span>
+    <p>📞 +8801XXXXXXXXX</p>
+  </div>
 </div>
+
+
+  </div>
+</div>
+
+
+
+
 
 </section>
 
@@ -325,10 +352,9 @@
   <section id="skills">
   <h2>Skills</h2>
   <div class="skills-grid">
-    
+
     <div class="skill-category">
       <h3>💻 Programming Languages</h3>
-
       <div class="skill-tags">
         <span>Python</span>
         <span>C</span>
@@ -353,7 +379,16 @@
         <span>Laravel</span>
         <span>React</span>
         <span>SQL</span>
+      </div>
+    </div>
+
+    <div class="skill-category">
+      <h3><i class="fas fa-database"></i> Databases</h3>
+      <div class="skill-tags">
         <span>MySQL</span>
+        <span>Oracle</span>
+        <span>SQLite</span>
+        <span>Firebase</span>
       </div>
     </div>
 
@@ -368,10 +403,45 @@
     </div>
 
     <div class="skill-category">
+      <h3><i class="fas fa-code"></i> Development Environments</h3>
+      <div class="skill-tags">
+        <span>VS Code</span>
+        <span>IntelliJ IDEA</span>
+        <span>Sublime Text</span>
+        <span>Android Studio</span>
+      </div>
+    </div>
+
+    <div class="skill-category">
       <h3><i class="fas fa-chart-line"></i> Data Analysis</h3>
       <div class="skill-tags">
         <span>Pandas</span>
         <span>NumPy</span>
+      </div>
+    </div>
+    
+    <div class="skill-category">
+      <h3><i class="fas fa-chart-pie"></i> Data Visualization</h3>
+      <div class="skill-tags">
+        <span>Matplotlib</span>
+      </div>
+    </div>
+
+    <div class="skill-category">
+      <h3><i class="fas fa-robot"></i> ML/DL Frameworks</h3>
+      <div class="skill-tags">
+        <span>Keras</span>
+        <span>PyTorch</span>
+        <span>scikit-learn</span>
+      </div>
+    </div>
+
+    <div class="skill-category">
+      <h3><i class="fas fa-language"></i> NLP</h3>
+      <div class="skill-tags">
+        <span>NER</span>
+        <span>Text Preprocessing</span>
+        <span>Text Representation & Classification</span>
       </div>
     </div>
 
@@ -382,6 +452,17 @@
       </div>
     </div>
 
+    
+
+    
+
+    <div class="skill-category">
+      <h3><i class="fas fa-vr-cardboard"></i> Graphics & Vision</h3>
+      <div class="skill-tags">
+        <span>OpenGL</span>
+        <span>OpenCV</span>
+      </div>
+    </div>
     <div class="skill-category">
       <h3><i class="fas fa-tools"></i> Tools</h3>
       <div class="skill-tags">
@@ -392,6 +473,7 @@
 
   </div>
 </section>
+
 
 <!-- problem solving-->
 <section id="problem-solving">
@@ -415,7 +497,13 @@
       <p>Also secured <strong>4★</strong> in <span class="badge four-star">C</span>, <span class="badge four-star">C++</span></p>
     </div>
   </div>
+  <div class="codolio-link">
+    <a href="https://codolio.io/yourusername" target="_blank" rel="noopener noreferrer">
+      🔗 View detailed problem-solving stats on Codolio
+    </a>
+  </div>
 </section>
+
 
 
   <!-- Certifications Section -->
@@ -504,7 +592,7 @@
     <div class="lang-card">
       <h3>🇩🇪 German</h3>
       <p>Beginner level (A1)<br>
-      <a href="#">View Certificate</a></p>
+      <a href="https://www.duolingo.com/profile/IrhamulIsl" target="_blank">View Certificate</a></p>
     </div>
   </div>
 </section>
@@ -602,6 +690,23 @@
   // Change every 7 seconds (7000 ms)
   setInterval(rotateBackground, 7000);
 
+
+  function showPhoneModal(event) {
+    event.preventDefault();
+    document.getElementById('phone-modal').style.display = 'block';
+  }
+
+  function closePhoneModal() {
+    document.getElementById('phone-modal').style.display = 'none';
+  }
+
+  // Optional: Close when clicking outside the modal
+  window.onclick = function(event) {
+    const modal = document.getElementById('phone-modal');
+    if (event.target == modal) {
+      modal.style.display = "none";
+    }
+  }
 
 
 
