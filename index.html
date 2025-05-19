@@ -64,8 +64,6 @@
     <p>📞 +8801XXXXXXXXX</p>
   </div>
 </div>
-
-
   </div>
 </div>
 
@@ -693,22 +691,32 @@
 
   function showPhoneModal(event) {
     event.preventDefault();
-    document.getElementById('phone-modal').style.display = 'block';
+    const modal = document.getElementById('phone-modal');
+    modal.style.display = 'flex';
   }
 
   function closePhoneModal() {
-    document.getElementById('phone-modal').style.display = 'none';
-  }
-
-  // Optional: Close when clicking outside the modal
-  window.onclick = function(event) {
     const modal = document.getElementById('phone-modal');
-    if (event.target == modal) {
-      modal.style.display = "none";
-    }
+    modal.style.display = 'none';
   }
 
+  // Wait for DOM to load before attaching the click listener
+  document.addEventListener('DOMContentLoaded', () => {
+    const modal = document.getElementById('phone-modal');
+    const modalContent = modal.querySelector('.modal-content');
 
+    window.addEventListener('click', function(event) {
+      if (
+        modal.style.display === 'flex' &&
+        !modalContent.contains(event.target) &&
+        !event.target.closest('.phone')
+      ) {
+        closePhoneModal();
+      }
+    });
+  });
+
+  
 
 </script>
 

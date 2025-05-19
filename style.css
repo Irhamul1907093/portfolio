@@ -237,25 +237,24 @@ section h2::after {
   display: none; /* Hidden by default */
   position: fixed;
   z-index: 999;
-  left: 4444;
-  top: 7;
+  left: 0;
+  top: 0;
   width: 30vw;
   height: 30vh;
-  background: rgba(86, 42, 207, 0.6);
-  backdrop-filter: blur(33px);
+  background: rgba(136, 117, 189, 0.6);
+  backdrop-filter: blur(3px);
   border-radius: 26px;
-  display: flex;
   justify-content: center;
   align-items: center;
 }
 
 /* Modal Content */
 .modal-content {
-  background: rgba(158, 26, 26, 0.1);
-  border: 1px solid rgba(255, 255, 255, 0.25);
+  background: rgba(127, 158, 26, 0.1);
+  border: 3px solid rgba(255, 255, 255, 0.25);
   border-radius: 16px;
   padding: 2rem 1.5rem;
-  color: #ecf0f1;
+  color: #dc0424;
   text-align: center;
   width: 80%;
   max-width: 320px;
@@ -265,7 +264,7 @@ section h2::after {
 }
 
 .modal-content p {
-  margin: 0;
+  margin: 10;
   font-size: 1.3rem;
   font-weight: bold;
 }
@@ -301,12 +300,6 @@ section h2::after {
     transform: scale(1);
   }
 }
-
-
-
-
-
-
 
 
 
