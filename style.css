@@ -777,7 +777,7 @@ footer {
 }
 
 .volunteer-card {
-  background: linear-gradient(to right, #fdfbfb, #ebedee);
+  background: linear-gradient(to right, #e2dfde, #e6b69b);
   padding: 1.5rem 2rem;
   border-left: 6px solid #3498db;
   border-radius: 12px;
@@ -797,9 +797,9 @@ footer {
 
 .volunteer-card p {
   margin: 0.3rem 0;
-  font-size: 0.95rem;
+  font-size: 1.0rem;
   line-height: 1.4;
-  color: #555;
+  color: #151313;
 }
 
 
@@ -812,7 +812,7 @@ footer {
 }
 
 .lang-card {
-  background: linear-gradient(to right, #fefefe, #f3f3f3);
+  background: linear-gradient(to right, #eaecec, #64e893);
   border-left: 6px solid #3498db;
   padding: 1rem 1.5rem;
   border-radius: 10px;
@@ -966,7 +966,9 @@ body.dark-mode footer {
 }
 
 body.dark-mode .project,
-body.dark-mode .research-card,
+body.dark-mode .skills-grid,
+body.dark-mode .certification-card,
+
 body.dark-mode .contact-form {
   background-color: #2a2a2a;
   color: #e0e0e0;
